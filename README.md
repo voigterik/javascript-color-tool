@@ -13,7 +13,6 @@ This tool allows users to input a hex color and adjust its lightness or darkness
 - Toggle between lightening and darkening modes
 - Adjustable intensity slider (0-100%)
 - Input validation for proper hex color format
-- Clean, responsive user interface
 
 ## Usage
 

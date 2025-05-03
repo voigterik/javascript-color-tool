@@ -157,6 +157,6 @@ function calcNewValue(hexValue) {
     // update the visual representation
     colorOutVisual.style.backgroundColor = newHex;
     
-    return newValues; // Return the values for potential further use
+    return newValues;
 }
 
