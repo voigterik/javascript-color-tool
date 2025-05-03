@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Color Tool</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <main>
+            <h1>Lighten or darken a color</h1>
+            <hr />
+            <form id="colorForm">
+                <div class="inputContainer">
+                    <label for="colorInput">Enter a value:</label>
+                    <input type="text" id="colorInput" name="colorInput" placeholder="#000000" />
+                    <div id="validationText" class="validationText"></div>
+                </div>
+                <div class="fieldsetContainer">
+                    <fieldset class="sliderContainer">
+                        <label for="colorType">Lighten</label>
+                        <input type="checkbox" id="colorType" name="colorType" class="colorCheckBox" />
+                        <div id="slider" class="slider"></div>
+                        <label for="colorType">Darken</label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="range" id="rangeLabel" class="rangeLabel"></label>
+                        <input type="range" id="rangeSlider" name="range" value="20" min="0" max="100" step="1" />
+                    </fieldset>
+                </div>
+            </form>
+            <div class="blocked">
+                <section class="color-block input-color colors">
+                    <p>Input</p>
+                    <span id="color-value-in"></span>
+                    <div id="color-input-visual"></div>
+                </section>
+                <section class="color-block output-color colors">
+                    <p>Output</p>
+                    <span id="color-value-out"></span>
+                    <div id="color-output-visual"></div>
+                </section>
+            </div>
+        </main>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
